@@ -47,22 +47,32 @@ function createCards() {
     }
 
     // Update the main data set by removing the cards we just used
-    cardsData.splice(0, currentSet.length);
+    //manage the source of the cards directly
+    // Step 1: Get the definitions and words into separate arrays
+    const definitionSet = currentSet.map(item => ({
+        definition: item.definition,
+        word: item.word
+    }));
+    const wordSet = currentSet.map(item => item.word);
 
-    // Create and shuffle the cards for display
-    const shuffledSet = [...currentSet].sort(() => Math.random() - 0.5);
+    // Step 2: Shuffle both sets independently
+    const shuffledDefinitions = shuffle(definitionSet);
+    const shuffledWords = shuffle(wordSet);
 
-    shuffledSet.forEach(item => {
+    // Step 3: Create the cards using the separate, shuffled arrays
+    shuffledDefinitions.forEach(item => {
         const definitionCard = document.createElement('div');
         definitionCard.classList.add('card');
         definitionCard.textContent = item.definition;
-        definitionCard.dataset.word = item.word;
+        definitionCard.dataset.word = item.word; // This link is crucial!
         definitionCard.draggable = true;
         definitionsColumn.appendChild(definitionCard);
+    });
 
+    shuffledWords.forEach(wordText => {
         const wordCard = document.createElement('div');
         wordCard.classList.add('word-card');
-        wordCard.textContent = item.word;
+        wordCard.textContent = wordText;
         wordsColumn.appendChild(wordCard);
     });
 }
