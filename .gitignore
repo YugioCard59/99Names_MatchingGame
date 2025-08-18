@@ -10,3 +10,6 @@
 !*.md
 !*.h
 !.gitignore
+!.js
+!.html
+!.css
