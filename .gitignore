@@ -6,10 +6,8 @@
 
 
 #from those subdirectories unignore what we want to track
-!*.cpp
 !*.md
 !*.h
-!.gitignore
 !.js
 !.html
 !.css
