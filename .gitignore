@@ -8,6 +8,6 @@
 #from those subdirectories unignore what we want to track
 !*.md
 !*.h
-!.js
-!.html
-!.css
+!*.js
+!*.html
+!*.css

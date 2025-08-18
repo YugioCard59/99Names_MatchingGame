@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    /*display: flex; note removed for the fixed banner so it is not covered
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    background-color: #f0f0f0;
+    padding-top: 60px; /*Add padding to push contnet down */
+}
+
+.fixed-banner {
+    position: fixed; /* This makes the element stay in the same place even when the user scrolls */
+    top: 0;          /* Positions the banner at the top of the viewport */
+    left: 0;         /* Aligns the banner to the left side */
+    width: 100%;     /* Makes the banner span the full width of the page */
+    background-color: #333; /* A dark background color */
+    color: white;    /* White text color */
+    text-align: center; /* Centers the text inside the banner */
+    padding: 10px;   /* Adds some space inside the banner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* A subtle shadow for a 3D effect */
+    z-index: 1000;   /* Ensures the banner appears on top of other content */
+}
+
+.game-container {
+    display: flex;
+    justify-content: center; /*Center game columns horizontally*/
+    align-items: center; /*Center game columns vertically*/
+    height: calc(100vh - 60px); /*adjust height to fill the remaining space*/
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.card, .word-card {
+    padding: 15px;
+    border-radius: 8px;
+    cursor: grab;
+    transition: transform 0.2s ease;
+}
+
+.card {
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+}
+
+.word-card {
+    background-color: #ffe0b2;
+    border: 1px solid #ffcc80;
+}
+
+/* Style for a card being dragged */
+.dragging {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.score-display {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
