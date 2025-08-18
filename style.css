@@ -52,8 +52,9 @@ body {
 }
 
 .word-card {
-    background-color: #ffe0b2;
-    border: 1px solid #ffcc80;
+    color: rgb(241, 222, 9); 
+    background-color: #0c0b0b;
+    border: 1px solid #575654;
 }
 
 /* Style for a card being dragged */
