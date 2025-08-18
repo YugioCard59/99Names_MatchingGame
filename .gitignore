@@ -1,0 +1,12 @@
+#ignore everything
+*
+
+#then unignore subdirectories
+!*/
+
+
+#from those subdirectories unignore what we want to track
+!*.cpp
+!*.md
+!*.h
+!.gitignore
