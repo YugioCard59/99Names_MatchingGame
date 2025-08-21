@@ -73,7 +73,7 @@ export const cardsData = [
     { definition: "The Giver of Death. The Creator of Death. Al-Mumeet", word: "ُاَلْمُمِيتُ" },
     { definition: "The Acceptor of Repentance. The Ever-Pardoning. At-Tawwab", word: "التَّوَابُ" },
     { definition: "The Source of All Goodness. Al-Barr", word: "الْبَرُّ" },
-    { definition: "The Most Exalted. The Self Exalted.", word: "الْمُتَعَالِي" },
+    { definition: "The Most Exalted. The Self Exalted. Al-Muta'ali", word: "الْمُتَعَالِي" },
     { definition: "The Sole Governor. Al-Waali", word: "الْوَالِي" },
     { definition: "The Hidden. The Knower of the Hidden. Al-Baatin", word: "الْبَاطِنُ" },
     { definition: "The Manifest. Az-Zahir", word: "الظَّاهِرُ" },
