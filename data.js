@@ -3,7 +3,7 @@
 export const cardsData = [
     { definition: "The Majestic. The Supreme. Al-Mutakabbir", word: "ُالْمُتَكَبِّر" },
     { definition: "The Compellor. The Restorer. Al-Jabbar", word: "الْجَبَّارُ" },
-    { definition: "The Mighty One. The All Mighty. Al-Aziz", word: "الْعَزِيزُ" },
+    { definition: "The Mighty One. The All Mighty. Al-Aziz, Al-Adheedh", word: "الْعَزِيزُ" },
     { definition: "The Protector. The Preserver of Safety. Al-Muhaymin", word: "الْمُهَيْمِنُ" },
     { definition: "The Giver of Peace. The Infuser of Faith. Al-Mu'min", word: "الْمُؤْمِنُ" },
     { definition: "The Giver of Peace. The Source of Peace. The Flawless. As-Salam", word: "السَّلاَمُ" },
@@ -51,7 +51,7 @@ export const cardsData = [
     { definition: "The Watchful. Ar-Raqeeb", word: "الرَّقِيبُ" },
     { definition: "The Benevolent. The Most Generous. The Most Esteemed. Al-Kareem", word: "الْكَرِيمُ" },
     { definition: "The Majestic. Al-Jaleel", word: "الْجَلِيلُ" },
-    { definition: "The Giver of Live. Al-Muhyi", word: "الْمُحْيِي" },
+    { definition: "The Giver of Life. Al-Muhyi", word: "الْمُحْيِي" },
     { definition: "The Restorer. The Reinstater. Al-Mu'eed", word: "ٱلْمُعِيدُ" },
     { definition: "The Originator. The Initiator. Al-Mubdi", word: "الْمُبْدِئُ" },
     { definition: "The One Who Records. The All-Enumerating. The Counter. Al-Muhsee", word: "الْمُحْصِي" },
